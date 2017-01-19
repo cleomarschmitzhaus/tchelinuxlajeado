@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TchêLinux Lajeado - 2016</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+		<!-- OpenGraph -->
+		<meta property="og:image" content="http://TchêLinux.org/assets/TchêLinux-facebook.png">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% ; margin: 0 auto 0 auto; width: 80%; }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">TchêLinux</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#inscricao">Inscri&ccedil;&otilde;es</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <a class="logo-link" href="#" title="TchêLinux Porto Alegre" itemprop="name">TchêLinux <br/>Lajeado</a>
+            </h1>
+            <h2 class="tagline">23 de abril de 2016, Univates Lajeado</h2>
+          </div>
+        </header>
+        <section id="sobre">
+            <div class ="container">
+	            <h2 class="subtitle">Sobre o Evento</h2>
+	            <p>O grupo de usuários de Software Livre TchêLinux, em parceria com a <a href="http://univates.br/">Univates</a>, tem o prazer de convidar a comunidade, independente do nível de conhecimento e experiência com tecnologia, software livre e áreas afins, para participar do Seminário de Tecnologia em Software Livre TchêLinux.<p>
+	            <p>O evento ocorrerá no dia 23 de abril, a partir das 9:00h, no Prédio 7 da Univates.</p>
+	            <p>
+	            	Não deixe de marcar presença na página do <a href="https://www.facebook.com/events/1027172433995502/">evento no Facebook</a>.
+	            </p>
+            </div>
+        </section>
+        <section id="inscricao">
+          <div class="container">
+            <h2 class="subtitle">Inscri&ccedil;&otilde;es Abertas</h2>
+            <p>
+                A participa&ccedil;&atilde;o no evento &eacute; gratuita por&eacute;m os participantes s&atilde;o incentivados a trazer 2kg de alimentos n&atilde;o perec&iacute;veis (exceto sal) que ser&atilde;o doados a institui&ccedil;&otilde;es de caridade.
+            </p>
+            <p>
+                Os alimentos ser&atilde;o recebidos no momento do credenciamento.
+            </p>
+            <p>
+            	<a href="http://goo.gl/forms/Wiv2s8AK3L"><span class="glyphicon glyphicon-link"></span>Clique aqui</a> para fazer sua inscrição.
+            </p>
+          </div>
+        </section>
+        <section id="programacao">
+          <div class="container">
+            <h2 class="subtitle">Programação</h2>
+            
+            <h3>Palestras</h3>
+            
+			<div class="schedule-tbl">
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th class="schedule-time">Hor&aacute;rio</th>
+							<th class="schedule-empty">Atividade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="schedule-other">
+							<td class="schedule-time">9:00</td>
+							<td class="schedule-slot">
+								<span class="description">Credenciamento</span>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">9:30</td>
+							<td class="schedule-slot">
+								<a href="#speech-ederson" data-toggle="modal" data-target="#speech-ederson">
+									<span class="description">Ferramentas para Impressão 3D - Da criação a Execução</span>
+									<span class="speaker">Ederson Balbinot</span>
+								</a>
+								<div class="modal fade" id="speech-ederson" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">9:30 - Ferramentas para Impressão 3D - Da criação a Execução</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													Mostrar tanto ferramentas (softwares) de criação de partes em 3D até a geração de códigos e comandos para 
+													a impressão.
+												</span>
+												<h4>Ederson Balbinot</h4>
+												<span class="speaker-bio">
+													Desenvolver projetos na área de engenharia de software e sistemas de informação, visando o aumento do bem 
+													estar das pessoas e a melhora em suas relações interpessoais, tudo isto em um contexto ambientalmente 
+													sustentável, humanamente digno e sempre que possível lucrativo financeiramente.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">10:00</td>
+							<td class="schedule-slot">
+								<a href="#speech-joao" data-toggle="modal" data-target="#speech-joao">
+									<span class="description">Xen-a-Jato: Do Básico ao Passthru</span>
+									<span class="speaker">João Marcos Spindler</span>
+								</a>
+								<div class="modal fade" id="speech-joao" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">10:00 - Xen-a-Jato: Do Básico ao Passthru</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													Desmistificar o uso/configuração do Xen, que vem crescendo em funcionalidades e plataformas virtualizadas. 
+													Mostrar a configuração básica completa de forma que, qualquer um, possa ter seu próprio ambiente de testes.
+												</span>
+												<h4>João Marcos Spindler</h4>
+												<span class="speaker-bio">
+													Graduando em Ciência da Computação e Segurança da informação, usa Linux, de verdade, desde 2005 e desde 
+													sempre, entusiasta de novas tecnologias.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">11:00</td>
+							<td class="schedule-slot">
+								<a href="#speech-jamiel" data-toggle="modal" data-target="#speech-jamiel">
+									<span class="description">Gestão de demandas de qualquer natureza com o Redmine</span>
+									<span class="speaker">Jamiel Spezia e Jader Fiegenbaum</span>
+								</a>
+								<div class="modal fade" id="speech-jamiel" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">11:00 - Gestão de demandas de qualquer natureza com o Redmine</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													É possível controlar demandas de qualquer natureza com o Redmine. Desde uma oficina mecânica até uma grande
+													indústria. Trazendo metodologias da indústria para dentro dos escritórios e com elementos de métodos ágeis, 
+													mostraremos alguns cases de implantação de gestão de demandas de TI, SAC, CRM e Jurídico, trazendo uma visão
+													gerencial ao negócio e potencializando a produtividade.
+												</span>
+												<h4>Jamiel Spezia</h4>
+												<span class="speaker-bio">
+													Engenheiro de computação formado pela Univates. Coordenador técnico da equipe de desenvolvimento da Solis.
+												</span>
+												<h4>Jader Fiegenbaum</h4>
+												<span class="speaker-bio">
+													Acadêmico de Engenharia de computação da Univates e analista de sistemas da Solis.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">12:00</td>
+							<td class="schedule-slot">
+								<span class="description">Almoço</span>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">13:00</td>
+							<td class="schedule-slot">
+								<a href="#speech-fabiano" data-toggle="modal" data-target="#speech-fabiano">
+									<span class="description">Técnicas de otimização de grandes bancos de dados PostgreSQL</span>
+									<span class="speaker">Fabiano Tomazini e Armando Taffarel Neto</span>
+								</a>
+								<div class="modal fade" id="speech-fabiano" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">13:00 - Técnicas de otimização de grandes bancos de dados PostgreSQL</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													Vamos contar algumas técnicas para otimizar grandes bases de dados postgresql. Otimização da configuração 
+													do banco de dados ao hardware, cluster de servidores, particionamento de tabelas, dados em memória, 
+													otimização de consultas, etc.
+												</span>
+												<h4>Fabiano Tomazini</h4>
+												<span class="speaker-bio">
+													Engenheiro de computação formado pela Univates. Analista de sistemas e DBA da Solis.
+												</span>
+												<h4>Armando Taffarel Neto</h4>
+												<span class="speaker-bio">
+													Diretor da Solis e engenheiro de computação formado pela Univates.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">14:00</td>
+							<td class="schedule-slot">
+								<a href="#speech-pablo" data-toggle="modal" data-target="#speech-pablo">
+									<span class="description">Implementando Design Patterns em PHP</span>
+									<span class="speaker">Pablo Dall'Oglio</span>
+								</a>
+								<div class="modal fade" id="speech-pablo" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">14:00 - Implementando Design Patterns em PHP</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+												</span>
+												<h4>Pablo Dall'Oglio</h4>
+												<span class="speaker-bio">
+													Pablo Dall’Oglio é mestre em Engenharia de Software pela Unisinos. Conhecido como autor de livros sobre PHP
+													pela editora Novatec (http://www.novatec.com.br), já projetou e desenvolveu inúmeros softwares de gestão de 
+													grande porte. Entusiasta de Orientação a Objetos e Padrões de Projeto, atualmente trabalha em sua empresa,
+													a Adianti Solutions (www.adianti.com.br), onde cria ferramentas de desenvolvimento e presta consultoria em
+													projeto e arquitetura de software.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">15:00</td>
+							<td class="schedule-slot">
+								<span class="description">Coffee-break</span>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">15:30</td>
+							<td class="schedule-slot">
+								<a href="#speech-matheus" data-toggle="modal" data-target="#speech-matheus">
+									<span class="description">Stack Open Source para desenvolvimento do AoMercado</span>
+									<span class="speaker">Matheus Pereira</span>
+								</a>
+								<div class="modal fade" id="speech-matheus" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">15:30 - Stack Open Source para desenvolvimento do AoMercado</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													AoMercado é uma startup em fase inicial que utiliza uma ampla stack de desenvolvimento open source. 
+													Back-end Python com soluções Tornado e Flask, persistência de dados com MongoDB e PostgreSQL, front-end com
+													AngularJS e SASS, desenvolvimento mobile com Ionic. A apresentação traz os desafios encontrados nos 
+													primeiros passos de uma startup e tem foco nas tecnologias utilizadas para o desenvolvimento do site e do 
+													aplicativo AoMercado.
+												</span>
+												<h4>Matheus Pereira</h4>
+												<span class="speaker-bio">
+													Desenvolvedor de software no Instituto Communitas e na Startup AoMercado. Mestrando em Ciência da 
+													Computação com ênfase em Inteligência Artificial na UFRGS. Bacharel em Ciência da Computação pela 
+													UCS. Organizador voluntários dos eventos TcheLinux Caxias e PyCaxias desde 2013. Palestras 
+													TcheLinux Caxias do Sul, Porto Alegre, Bento e Pelotas, PyCaxias, PySM, TDC e FISL.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">16:30</td>
+							<td class="schedule-slot">
+								<a href="#speech-cesar" data-toggle="modal" data-target="#speech-cesar">
+									<span class="description">Painel - O mercado de trabalho em software livre</span>
+									<span class="speaker">Cesar Brod</span>
+								</a>
+								<div class="modal fade" id="speech-cesar" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">16:30 - Painel - O mercado de trabalho em software livre</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													É possível ter um emprego ou montar uma empresa com base em softwares que podem ser baixados da Internet,
+													legalmente, sem se pagar nada por eles? Neste painel, conduzido pelo diretor de desenvolvimento regional do
+													Linux Professional Institute, Cesar Brod, você conhecerá a história de vários casos de sucesso e terá uma
+													série de dicas para ter uma vida profissional que respeita a livre distribuição de qualquer tipo de
+													conhecimento. Os painelistas garantirão um bom tempo para a interação com a plateia. Traga suas perguntas!
+												</span>
+												<h4>Cesar Brod</h4>
+												<span class="speaker-bio">
+													Cesar Brod é Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu 
+													trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer
+													suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu 
+													renomado programa de certificação no país.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">17:30</td>
+							<td class="schedule-slot">
+								<a href="#speech-luiz" data-toggle="modal" data-target="#speech-luiz">
+									<span class="description">Painel - Começos no software livre: do uso ao empreendorismo!</span>
+									<span class="speaker">Luiz Rauber</span>
+								</a>
+								<div class="modal fade" id="speech-luiz" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">17:30 - Painel - Começos no software livre: do uso ao empreendorismo!e</h4>
+											</div>
+											<div class="modal-body">
+												<span class="speech-description">
+													Painel começos no software livre: do uso ao empreendorismo!
+												</span>
+												<h4>Luiz Rauber</h4>
+												<span class="speaker-bio">
+													Empreendedor, startupeiro, investidor, consultor, palestrante, pesquisador e afins em cultura, consciência
+													e desenvolvimento de: software e hardware livre, hackerspaces, startups, biotecnologia, biohacking,
+													genética; Professor no Senac Santa Cruz do Sul; Mentor Startupies Weekend; Mestre em Nanociências;
+													Especialista em Gerenciamento de Projetos; Bacharel em Ciência da Computação. Palestrou em eventos como
+													Campus Party, Latinoware e FISL; Contribui em grupos como Tchelinux.org, CodeClubeBrasil.org, 
+													JabutiEdu.org.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">18:30</td>
+							<td class="schedule-slot">
+								<span class="description">Encerramento</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				
+			<h3>Workshop</h3>
+			
+			<div class="schedule-tbl">
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th class="schedule-time">Hor&aacute;rio</th>
+							<th class="schedule-empty">Atividade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="schedule-other">
+							<td class="schedule-time">10:00</td>
+							<td class="schedule-slot">
+								<a href="#workshop-cesar" data-toggle="modal" data-target="#workshop-cesar">
+									<span class="description">Revisão para a certificação LPI Linux Essentials</span>
+									<span class="speaker">Cesar Brod </span>
+								</a>
+								<div class="modal fade" id="workshop-cesar" tabindex="-1" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title">10:00 - Revisão para a certificação LPI Linux Essentials</h4>
+											</div>
+											<div class="modal-body">
+												<p>Você usa o Linux? Mesmo que você não saiba do que estamos falando, a resposta é sim. O Linux é a base do
+												Android que roda em seu telefone celular e ele é responsável, também, pela quase totalidade da 
+												infraestrutura da Internet. Ou seja, se você usa a Internet, usa o Linux.</p>
+
+												<p>Nesse minicurso, ministrado por Cesar Brod, diretor de desenvolvimento regional do Linux Professional 
+												Institute (LPI), você conhecerá, na prática, o essencial para poder fazer a prova de certificação 
+												Linux Essentials.</p>
+
+												<p>Dentre os assuntos cobertos, estão os seguintes:</p>
+												
+												<ul>
+													<li>A comunidade Linux e a vida profissional com softwares livre e abertos</li>
+													<li>Os aplicativos mais comuns em software livre</li>
+													<li>Conceitos básicos de linha de comando</li>
+													<li>Manipulação de arquivos</li>
+													<li>Conceitos básicos de segurança em rede</li>
+													<li>Criação de usuários e grupos</li>
+													<li>Diretórios especiais</li>
+													<li>Onde obter mais informações para passar na prova de certificação</li>
+												</ul>
+
+												<p>OBSERVAÇÃO: se você já possui um conhecimento básico de Linux, esse minicurso servirá, efetivamente,
+												como uma boa revisão dos conceitos básicos necessários para passar no exame Linux Essentials oferecido pelo
+												LPI. Caso contrário, ele servirá como uma boa introdução ao Linux.</p>
+												
+												<h4>Cesar Brod</h4>
+												<span class="speaker-bio">
+													Cesar Brod é Diretor de Desenvolvimento Regional para o Brasil do Linux Professional Institute e seu 
+													trabalho consiste em promover a compreensão do LPI acerca das necessidades da região, a fim de fortalecer
+													suas ações com relação à formação profissional em Linux e software livre, bem como como ampliar seu 
+													renomado programa de certificação no país.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">12:00</td>
+							<td class="schedule-slot">
+								<span class="description">Almoço</span>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">13:00</td>
+							<td class="schedule-slot">
+								<a href="#workshop-cesar" data-toggle="modal" data-target="#workshop-cesar">
+									<span class="description">Revisão para a certificação LPI Linux Essentials (continuação)</span>
+									<span class="speaker">Cesar Brod </span>
+								</a>
+							</td>
+						</tr>
+						<tr class="schedule-other">
+							<td class="schedule-time">15:00</td>
+							<td class="schedule-slot">
+								<span class="description">Encerramento workshop</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+        </section>
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <p>
+          	Prédio 7
+            Univates<br/>
+            Rua Avelino Tallini, 171 - Bairro Universitário<br/>
+            Lajeado - Rio Grande do Sul
+          </p>
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                                
+                <h4>Patrocinador diamante</h4>
+                
+                <div class="row">
+                	<div class="col-xs-6 col-sm-5 col-md-4">
+	                	<a href="http://www.lpi.org/" title="Linux Professional Institute" target="_blank">
+	                    	<img src="images/lpi.png" alt="Linux Professional Institute" />
+	                    </a>
+                	</div>
+                </div>
+                
+                <h4>Patrocinador ouro</h4>
+                
+                <div class="row">
+                	<div class="col-xs-5 col-sm-4 col-md-3">
+	                	<a href="http://www.solis.coop.br/" title="Solis" target="_blank">
+	                      <img src="images/solis.png" alt="Solis" />
+	                    </a>
+                	</div>
+                </div>
+                
+                <h4>Institucional</h4>
+                
+               	<div class="col-xs-5 col-sm-4 col-md-3">
+                	<a href="http://univates.br/" title="Univates" target="_blank">
+                      	<img src="images/univates.jpg" alt="Univates" />
+                    </a>
+               	</div>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">TchêLinux</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#inscricao">Inscri&ccedil;&otilde;es</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                	<div class="github">
+		                <a href="https://github.com/edpittol/tchelinuxlajeado" target="_blank">
+		                    <img src="images/GitHub-Mark-32px.png"/>
+		                </a>
+	                </div>
+	            </div>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
+    </div>
+    </body>
+</html>
