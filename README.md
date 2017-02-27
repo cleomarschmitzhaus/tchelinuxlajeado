@@ -1,4 +1,4 @@
-# TchêLinux Lajeado 2016
+# TchêLinux Lajeado 2017
 
 [lajeado.tchelinux.org](http://lajeado.tchelinux.org)
 
