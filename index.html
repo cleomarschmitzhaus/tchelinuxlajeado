@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tchelinux 2017 Lajeado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+          html { height: 100% }
+          body { height: 100%; margin: 0; padding: 0 }
+          #map_canvas { height: 100% ; margin: 0 auto 0 auto; width: 80%; }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Tchelinux</a>
+                    </div>
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                      <ul class="nav navbar-nav">
+                        <li style="display:none;"><a href="#sobre">Sobre</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#inscricao">Inscrições</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                      </ul>
+                    </div>
+            </div>
+        </nav>
+        <header class="header">
+          <div class="wrapper">
+            <h1 class="logo-name">
+              <a class="logo-link" href="#" title="Tchelinux Lajeado" itemprop="name">Tchelinux <br/>Lajeado</a>
+            </h1>
+            <h2 class="tagline">29 de Abril de 2017, Univates Lajeado</h2>
+          </div>
+        </header>
+        <section id="sobre">
+            <div class ="container">
+            <h2 class="subtitle">Sobre o Evento</h2>
+            <p>O Tchelinux em parceria com a <a href="http://www.univates.br/">Univates</a>, tem o orgulho de convidar
+                a comunidade, independente do nível de conhecimento e experiência com Tecnologia, Software Livre e áreas afins, para participar do evento que ocorrerá no dia <b>29 de Abril de 2017</b> a partir das 08:00 horas, na Univates em
+                Lajeado</p>
+
+                <p>
+                    <a target="_blank" href="https://www.univates.br/sistemas/inscricoes/processo-952">Inscreva-se para o evento!</a>
+                </p>
+
+
+
+		<!-- Call for papers - Deixar habilitado APENAS enquanto a chamada de trabalhos do evento estiver aberta! -->
+
+
+        </section>
+        <section id="call4papers">
+          <div class="container">
+            <h2 class="subtitle">Chamada de Trabalhos</h2>
+
+            <p>
+				A Chamada de Trabalhos para o Tchelinux 2017 Lajeado está aberta e caso você tenha
+				interesse em submeter uma palestra, por favor preencha o formulário abaixo. O prazo
+				máximo para submissão é <b>31 de Março de 2017</b>, e os trabalhos escolhidos serão publicados
+ 				dia <b>03 de Abril de 2017</b>.
+            </p>
+            <p>
+                  <a target="_blank" href="https://goo.gl/forms/NIgYQIoeHlIfSMqZ2">Clique aqui e submeta sua Palestra agora mesmo!!</a>
+            </p>
+          </div>
+        </section>
+        </section>
+        <section id="inscricao">
+          <div class="container">
+            <h2 class="subtitle">Inscrições</h2>
+            <p>
+                O evento é <b>gratuito</b>, contudo os participantes são encorajados a doar 2kg de alimentos não-perecíveis (exceto sal), que serão encaminhados a instituição de caridade<!-- $INSTITUICAO_CARIDADE -->.
+            </p>
+            <p>
+                Os alimentos devem ser entregues no ato do credenciamento.
+            </p>
+			      <p>
+				    <b><a href="https://www.univates.br/sistemas/inscricoes/processo-952">Inscreva-se agora!</a><b>
+			      <p>
+          </div>
+        </section>
+
+
+
+    <!-- As secções "programação" e "palestras" podem ser todas comentadas durante a chamada de trabalhos e publicadas quando a grade estiver pronta -->
+
+
+    <!-- <section id="programacao">
+    <div class="container">
+    <h2 class="subtitle">Programação</h2>
+
+	<div class="schedule-tbl">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th class="schedule-time">Horário</th>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        $NOME_SALA_1
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        $NOME_SALA_2
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        $NOME_SALA_3
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        $NOME_SALA_4
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        $NOME_SALA_5
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_CREDENCIAMENTO</td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        Recepção / Credenciamento - $LOCAL_RECEPCAO
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_ABERTURA</td>
+                    <td class="schedule-slot" colspan="4" style="text-align:center">
+                        Abertura - $NOME_SALA_1
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_SLOT_1</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-1">
+                            <span class="description">
+                                $PALESTRA_01<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_01_PALESTRANTE
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-2">
+                            <span class="description">
+                                 $PALESTRA_02<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_02_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-3">
+                            <span class="description">
+                                $PALESTRA_03<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_03_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-4">
+                            <span class="description">
+                                $PALESTRA_04<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_04_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-5">
+                            <span class="description">
+                                $PALESTRA_05<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_05_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_SLOT_2</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-6">
+                            <span class="description">
+                                $PALESTRA_06<br/>
+                            </span></a>
+                        <span class="speaker">
+                            $PALESTRA_06_PALESTRANTE
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-7">
+                            <span class="description">
+                                $PALESTRA_07<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_07_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-8">
+                            <span class="description">
+                                $PALESTRA_08<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_08_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-9">
+                            <span class="description">
+                                $PALESTRA_09<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_09_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-10">
+                            <span class="description">
+                                $PALESTRA_10<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                             $PALESTRA_10_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_ALMOCO</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                     Intervalo para Almoço
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_SLOT_3</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-11">
+                            <span class="description">
+                                $PALESTRA_11<br/>
+                            </span></a>
+                        <span class="speaker">
+								$PALESTRA_11_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-12">
+                            <span class="description">
+                                $PALESTRA_12<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_12_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-13">
+                            <span class="description">
+                                $PALESTRA_13<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_13_PALESTRANTE<br />
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-14">
+                            <span class="description">
+                                $PALESTRA_14<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_14_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-15">
+                            <span class="description">
+                                $PALESTRA_15<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_15_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_SLOT_4</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-16">
+                            <span class="description">
+                               $PALESTRA_16<br/>
+                            </span></a>
+                        <span class="speaker">
+                            $PALESTRA_16_PALESTRANTE
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-17">
+                            <span class="description">
+                                $PALESTRA_17<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_17_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-18">
+                            <span class="description">
+                                $PALESTRA_18<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+							$PALESTRA_18_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-19">
+                            <span class="description">
+                                $PALESTRA_19<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_19_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-20">
+                            <span class="description">
+                                $PALESTRA_20<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_20_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_SLOT_5</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-21">
+                            <span class="description">
+                              $PALESTRA_21<br/>
+                            </span></a>
+                        <span class="speaker">
+                            $PALESTRA_21_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-22">
+                            <span class="description">
+                                $PALESTRA_22<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_22_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-23">
+                            <span class="description">
+                                $PALESTRA_23<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_23_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-24">
+                            <span class="description">
+                                $PALESTRA_24<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_24_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-25">
+                            <span class="description">
+                                $PALESTRA_25<br/>
+                            </span>
+                        </a>
+                        <span class="speaker">
+                            $PALESTRA_25_PALESTRANTE<br/>
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="schedule-other">
+                    <td class="schedule-time">$HORARIO_ENCERRAMENTO</td>
+                    <td class="schedule-slot" colspan="4" style="text-align: center">
+                        <a href="#speech-26">
+                            <span class="description">
+                                Encerramento<br/>
+                            </span></a>
+                        <span class="speaker">
+                            Tchelinux<br/>
+                        </span>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+        </div>
+    </section> -->
+
+    <!-- <section id="palestras">
+        <div class="container">
+            <h2 class="subtitle">Palestras</h2>
+
+
+            <div id="speech-1" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_1</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_01</h3>
+             	      <span class="speech-description">$PALESTRA_01_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_01_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_01_CURRICULO</span>
+            </div>
+
+            <div id="speech-2" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_1</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_02</h3>
+             	      <span class="speech-description">$PALESTRA_02_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_02_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_02_CURRICULO</span>
+            </div>
+
+            <div id="speech-3" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_1</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_03</h3>
+             	      <span class="speech-description">$PALESTRA_03_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_03_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_03_CURRICULO</span>
+            </div>
+
+            <div id="speech-4" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_1</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_04</h3>
+             	      <span class="speech-description">$PALESTRA_04_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_04_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_04_CURRICULO</span>
+            </div>
+
+            <div id="speech-5" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_1</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_05</h3>
+             	      <span class="speech-description">$PALESTRA_05_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_05_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_05_CURRICULO</span>
+            </div>
+
+            <div id="speech-6" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_2</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_06</h3>
+             	      <span class="speech-description">$PALESTRA_06_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_06_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_06_CURRICULO</span>
+            </div>
+
+            <div id="speech-7" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_2</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_07</h3>
+             	      <span class="speech-description">$PALESTRA_07_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_07_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_07_CURRICULO</span>
+            </div>
+
+            <div id="speech-8" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_2</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_08</h3>
+             	      <span class="speech-description">$PALESTRA_08_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_08_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_08_CURRICULO</span>
+            </div>
+
+            <div id="speech-9" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_2</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_09</h3>
+             	      <span class="speech-description">$PALESTRA_09_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_09_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_09_CURRICULO</span>
+            </div>
+
+            <div id="speech-10" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_2</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_10</h3>
+             	      <span class="speech-description">$PALESTRA_10_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_10_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_10_CURRICULO</span>
+            </div>
+
+            <div id="speech-11" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_3</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_11</h3>
+             	      <span class="speech-description">$PALESTRA_11_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_11_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_11_CURRICULO</span>
+            </div>
+
+            <div id="speech-12" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_3</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_12</h3>
+             	      <span class="speech-description">$PALESTRA_12_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_12_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_12_CURRICULO</span>
+            </div>
+
+            <div id="speech-13" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_3</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_13</h3>
+             	      <span class="speech-description">$PALESTRA_13_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_13_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_13_CURRICULO</span>
+            </div>
+
+            <div id="speech-14" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_3</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_14</h3>
+             	      <span class="speech-description">$PALESTRA_14_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_14_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_14_CURRICULO</span>
+            </div>
+
+            <div id="speech-15" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_3</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_15</h3>
+             	      <span class="speech-description">$PALESTRA_15_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_15_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_15_CURRICULO</span>
+            </div>
+
+            <div id="speech-16" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_4</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_16</h3>
+             	      <span class="speech-description">$PALESTRA_16_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_16_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_16_CURRICULO</span>
+            </div>
+
+            <div id="speech-17" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_4</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_17</h3>
+             	      <span class="speech-description">$PALESTRA_17_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_17_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_17_CURRICULO</span>
+            </div>
+
+            <div id="speech-18" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_4</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_18</h3>
+             	      <span class="speech-description">$PALESTRA_18_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_18_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_18_CURRICULO</span>
+            </div>
+
+            <div id="speech-19" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_4</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_19</h3>
+             	      <span class="speech-description">$PALESTRA_19_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_19_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_19_CURRICULO</span>
+            </div>
+
+            <div id="speech-20" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_4</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_20</h3>
+             	      <span class="speech-description">$PALESTRA_20_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_20_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_20_CURRICULO</span>
+            </div>
+
+            <div id="speech-21" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_5</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_21</h3>
+             	      <span class="speech-description">$PALESTRA_21_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_21_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_21_CURRICULO</span>
+            </div>
+
+            <div id="speech-22" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_5</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_22</h3>
+             	      <span class="speech-description">$PALESTRA_22_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_22_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_22_CURRICULO</span>
+            </div>
+
+            <div id="speech-23" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_5</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_23</h3>
+             	      <span class="speech-description">$PALESTRA_23_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_23_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_23_CURRICULO</span>
+            </div>
+
+            <div id="speech-24" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_5</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_24</h3>
+             	      <span class="speech-description">$PALESTRA_24_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_24_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_24_CURRICULO</span>
+            </div>
+
+            <div id="speech-25" class=speech-container>
+             	<span class="speech-time">$HORARIO_SLOT_5</span>
+             	<div class="speech-info">
+                    <h3 class="speech-title">$PALESTRA_25</h3>
+             	      <span class="speech-description">$PALESTRA_25_DESCRICAO</span>
+             	    <h3 class="speaker-name">$PALESTRA_25_PALESTRANTE</h3>
+             	      <span class="speaker-bio">$PALESTRA_25_CURRICULO</span>
+            </div>
+
+        </div>
+    </section> -->
+
+        <section id="local">
+        <div class="container">
+          <h2 class="subtitle">Local</h2>
+          <p>
+            Univates<br/>
+            Av. Avelino Talini, 171 - Universitário, Lajeado<br/>
+            Lajeado - Rio Grande do Sul
+          </p>
+          <div id="map_canvas" style="width: 100%; height: 350px;"></div>
+          <input type="text" id="search-route" class="form-control" placeholder="Digite sua localização">
+          <div id="directions-panel"></div>
+        </div>
+        </section>
+        <section id="apoio">
+            <div class="container">
+                <h2 class="subtitle">Apoio</h2>
+                <!-- <h4>Institucional</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://www.univates.br/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/univates.jpg" alt="Univates" class="photo"/>
+                    </a>
+                  </li>
+                </ul> -->
+                <h4>Patrocinador Diamante</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://www.lpi.org/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/lpi.png" alt="lpi" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <h4>Patrocinador Ouro</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://www.poatek.com/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/poatek.jpg" alt="poatek" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <h4>Patrocinador Prata</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://www.solis.com.br/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/solis.png" alt="lpi" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://lajeado.tchelinux.org" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/requisittus.png" alt="Requisittus" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://www.univates.br/graduacao/sistemas-de-informacao" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/si.png" alt="Sistemas de Informação - Univates" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <h4>Apoio</h4>
+                <ul class="apoio-list">
+                  <li class="apoio-item">
+                    <a href="http://www.univates.br/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/univates.jpg" alt="Univates" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://www.adrianoott.com.br/" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/Adriano.jpg" alt="Adriano Ott" class="photo"/>
+                    </a>
+                  </li>
+                  <li class="apoio-item">
+                    <a href="http://lajeado.tchelinux.org" title="Instituição" class="apoio-logo apoio-link" target="_blank">
+                      <img src="images/taquari.png" alt="taquari Valley" class="photo"/>
+                    </a>
+                  </li>
+                </ul>
+                <!-- <h4>Gostaria de Patrocinar os eventos do Tchelinux?</h4>
+                <ul class="apoio-item">
+                  <li class="apoio-item">
+                    <a href="http://goo.gl/eLSqYm" title="Seja um patrocinador" class="apoio-logo apoio-link" target="_blank">
+                      <span class="glyphicon glyphicon-plus"></span>
+                    </a>
+                  </li>
+                </ul> -->
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <ul class="list-inline" id="footer-menu">
+                        <li class="active"><a href="#">Tchelinux</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#palestras">Palestras</a></li>
+                        <li><a href="#local">Local</a></li>
+                        <li><a href="#apoio">Apoio</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2">
+                	<div class="github">
+		                <a href="https://github.com/tchelinux-eventos/lajeado" target="_blank">
+		                    <img src="images/GitHub-Mark-32px.png"/>
+		                </a>
+	                </div>
+	            </div>
+            </div>
+        </div>
+    </footer>
+    <div style="display:none;">
+        <script type="text/javascript" src="javascript.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
+    </div>
+    </body>
+</html>
